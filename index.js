@@ -1,28 +1,28 @@
 // Write your solution in this file!
-const employee ={}
-
-employee['name'] = 'Devin';
-employee['streetAddress'] = '11 Broadway';
+const employee = {
+    name: 'Stephen',
+    address: '11 Broadway',
+}
 
 function updateEmployeeWithKeyAndValue(obj, key, value) {
     const updatedEmployee = {...obj}
     updatedEmployee[key] = value;
     return updatedEmployee;
-}
+};
 
-function destructivelyUpdateEmployeeWithKeyAndValue(obj, key, value) {
+function destructivelyUpdateEmployeeWithKeyAndValue(obj, key,value) {
     obj[key] = value;
     return obj;
+};
 
-}
-
-function deleteFromEmployeeByKey() {
-    const deleteFromEmployeeByKey ={}
-    delete {}.key;
+function deleteFromEmployeeByKey(obj, key) {
+    const deleteFromEmployeeByKey = {}
+    delete deleteFromEmployeeByKey.name;
     return deleteFromEmployeeByKey;
-}
+};
 
-function destructivelyDeleteFromEmployeeByKey() {
+function destructivelyDeleteFromEmployeeByKey(obj, key) {
     delete employee.name;
     return employee;
-}
+};
+
